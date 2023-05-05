@@ -1,0 +1,21 @@
+#include<stdio.h>    
+    int main()
+    {
+      int op[8], ip, index, rem;
+      index = 7;
+      printf("Enter the decimal number to convert [0-]: ");    
+      scanf("%d",&ip); 
+      do
+      {
+        rem = ip % 2;
+        ip = ip / 2;
+        op[index]= rem;    
+        index = index - 1;
+      }while(ip != 0);
+    printf("\nBinary of Given Number is : ");    
+    for(int loop = 0; loop < 8; loop++)    
+    {    
+    printf("%d",op[loop]);    
+    }    
+    return 0;  
+    }
