@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    double U,p=0;
+    printf("enter water usage cost:\n");
+    scanf("%lf",&U);
+    if(U<=1000)
+    p=15;
+    else if(U<=2000)
+    printf("p=15+((u-1000)*0.0175)");
+    else if(U<=3000)
+    printf("p=15+175+((u-2000)*0.02)");
+    else
+    printf("p=15+17.5+20+70");
+    return 0;
+}
