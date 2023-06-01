@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    int n1, n2, product;
+    printf("\n please enter any integer value:");
+    scanf("%d%d", &n1, &n2);
+
+    product = n1 * n2;
+
+    printf("\n product of given numbers %d %d is = %d", n1,n2,product);
+
+    return 0;
+}
